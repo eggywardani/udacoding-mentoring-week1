@@ -2,10 +2,9 @@ package com.eggy
 
 fun main() {
     val arrayKota = arrayOf("Jakarta","Jakarta","Padang","Solo","Padang","Bandung","Padang","Malang","Bali")
-    val arrayKotaList = arrayKota.toSet()
 
 
-    for (i in arrayKotaList){
+    for (i in arrayKota.toSet()){
         println("$i : ${arrayKota.count { it == i }}")
     }
 
