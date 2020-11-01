@@ -2,14 +2,12 @@ package com.eggy
 
 fun main() {
     val arrayKota = arrayOf("Jakarta","Jakarta","Padang","Solo","Padang","Bandung","Padang","Malang","Bali")
+    val arrayKotaList = arrayKota.toSet()
 
-    println("Jakarta : ${arrayKota.count { it == "Jakarta" }}")
-    println("Padang : ${arrayKota.count { it == "Padang" }}")
-    println("Solo : ${arrayKota.count { it == "Solo" }}")
-    println("Bandung : ${arrayKota.count { it == "Bandung" }}")
-    println("Malang : ${arrayKota.count { it == "Malang" }}")
-    println("Bali : ${arrayKota.count { it == "Bali" }}")
 
+    for (i in arrayKotaList){
+        println("$i : ${arrayKota.count { it == i }}")
+    }
 
 }
 
